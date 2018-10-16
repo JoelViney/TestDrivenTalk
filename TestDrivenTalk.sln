@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDrivenTalk", "TestDrivenTalk\TestDrivenTalk.csproj", "{2DD3FADD-CB6F-44BF-9D30-413CDFA2B29D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDrivenTalk.Tests", "TestDrivenTalk.Tests\TestDrivenTalk.Tests.csproj", "{B19BE848-14E8-4953-AD66-389D8D1297EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{BEA8338E-1BAE-4735-B215-B04BC99DC01A}"
+	ProjectSection(SolutionItems) = preProject
+		!Test Driven Development.pptx = !Test Driven Development.pptx
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DD3FADD-CB6F-44BF-9D30-413CDFA2B29D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD3FADD-CB6F-44BF-9D30-413CDFA2B29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD3FADD-CB6F-44BF-9D30-413CDFA2B29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD3FADD-CB6F-44BF-9D30-413CDFA2B29D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19BE848-14E8-4953-AD66-389D8D1297EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19BE848-14E8-4953-AD66-389D8D1297EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19BE848-14E8-4953-AD66-389D8D1297EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19BE848-14E8-4953-AD66-389D8D1297EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01339486-963D-42C7-9508-82A7E9DB933C}
+	EndGlobalSection
+EndGlobal
