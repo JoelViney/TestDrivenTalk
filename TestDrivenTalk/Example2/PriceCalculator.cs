@@ -4,7 +4,7 @@ namespace TestDrivenTalk.Example2
 {
     public class PriceCalculator
     {
-        public decimal GetPrice(Customer customer, decimal amount)
+        public decimal GetPrice(Customer? customer, decimal amount)
         {
             var result = amount;
 

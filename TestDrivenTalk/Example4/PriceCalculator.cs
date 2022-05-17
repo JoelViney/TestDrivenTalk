@@ -12,7 +12,7 @@ namespace TestDrivenTalk.Example4
             _calendar = calendar;
         }
 
-        public decimal GetPrice(Product product, Customer customer = null)
+        public decimal GetPrice(Product product, Customer? customer = null)
         {
             var price = product.Price;
 

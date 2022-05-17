@@ -4,7 +4,7 @@ namespace TestDrivenTalk.Example3
 {
     public class PriceCalculator
     {
-        public decimal GetPrice(Product product, Customer customer = null)
+        public decimal GetPrice(Product product, Customer? customer = null)
         {
             var result = product.SalePrice ?? product.Price;
 
