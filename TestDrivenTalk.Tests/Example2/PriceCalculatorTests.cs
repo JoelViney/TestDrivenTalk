@@ -1,7 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TestDrivenTalk.Example2
 {
@@ -18,7 +15,7 @@ namespace TestDrivenTalk.Example2
             var priceCalculator = new PriceCalculator();
 
             // Act
-            var price = priceCalculator.GetPrice(null, 11.95M);
+            var price = priceCalculator.GetPrice(null, 11.99M);
 
             // Assert
             Assert.AreEqual(11.95M, price);

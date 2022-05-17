@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TestDrivenTalk.Example4.Extensions
 {
@@ -16,7 +14,7 @@ namespace TestDrivenTalk.Example4.Extensions
         {
             var productSale = new ProductSale()
             {
-                SalePrice = salePrice,
+                Price = salePrice,
                 FromDate = fromDate,
                 ToDate = toDate
             };

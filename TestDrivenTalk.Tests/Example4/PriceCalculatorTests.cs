@@ -1,7 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestDrivenTalk.Example4.Extensions;
 using TestDrivenTalk.Example4.Stubs;
 
@@ -18,7 +17,7 @@ namespace TestDrivenTalk.Example4
         {
             // Arrange
             var priceCalculator = new PriceCalculator(new CalendarStub());
-            var product = new Product() { Price = 11.95M };
+            var product = new Product() { Price = 11.99M };
 
             // Act
             var price = priceCalculator.GetPrice(product);
@@ -63,10 +62,11 @@ namespace TestDrivenTalk.Example4
             // Arrange
             var calendar = new CalendarStub(new DateTime(2018, 1, 2));
             var priceCalculator = new PriceCalculator(calendar);
+
             var product = new Product().HasPrice(10.00M).IsOnSale(9.00M, new DateTime(2018, 1, 1), new DateTime(2018, 1, 3));
                 
             // Act
-            var price = priceCalculator.GetPrice(product: product);
+            var price = priceCalculator.GetPrice(product);
 
             // Assert
             Assert.AreEqual(9.00M, price);

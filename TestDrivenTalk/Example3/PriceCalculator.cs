@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TestDrivenTalk.Example3
 {
     public class PriceCalculator
     {
-        public object GetPrice(Product product, Customer customer = null)
+        public decimal GetPrice(Product product, Customer customer = null)
         {
             var result = product.SalePrice ?? product.Price;
 

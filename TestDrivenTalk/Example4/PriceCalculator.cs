@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace TestDrivenTalk.Example4
 {
     public class PriceCalculator
     {
-        private ICalendar _calendar;
+        private readonly ICalendar _calendar;
 
         public PriceCalculator(ICalendar calendar)
         {
             _calendar = calendar;
         }
 
-        public object GetPrice(Product product, Customer customer = null)
+        public decimal GetPrice(Product product, Customer customer = null)
         {
             var price = product.Price;
 
@@ -25,7 +23,7 @@ namespace TestDrivenTalk.Example4
                 var sale = product.SalePrices.FirstOrDefault(x => today >= x.FromDate.Date && today <= x.ToDate.Date);
                 if (sale != null)
                 {
-                    price = sale.SalePrice;
+                    price = sale.Price;
                 }
             }
 

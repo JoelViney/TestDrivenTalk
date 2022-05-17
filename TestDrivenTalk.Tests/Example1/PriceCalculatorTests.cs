@@ -6,7 +6,8 @@ namespace TestDrivenTalk.Example1
     public class PriceCalculatorTests
     {
         /// <summary>
-        /// Test that people buying the product on line pay the same price as someone buying in store.
+        /// Test that people buying the product online pay the 
+        /// same price as someone buying in store.
         /// </summary>
         [TestMethod]
         public void RoundDown5CentsTest()
@@ -15,7 +16,7 @@ namespace TestDrivenTalk.Example1
             var priceCalculator = new PriceCalculator();
 
             // Act
-            var price = priceCalculator.GetPrice(11.95M);
+            var price = priceCalculator.GetPrice(11.99M);
 
             // Assert
             Assert.AreEqual(11.95M, price);

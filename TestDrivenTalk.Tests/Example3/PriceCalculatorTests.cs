@@ -1,7 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TestDrivenTalk.Example3
 {
@@ -16,7 +13,7 @@ namespace TestDrivenTalk.Example3
         {
             // Arrange
             var priceCalculator = new PriceCalculator();
-            var product = new Product() { Price = 11.95M };
+            var product = new Product() { Price = 11.99M };
 
             // Act
             var price = priceCalculator.GetPrice(product);
